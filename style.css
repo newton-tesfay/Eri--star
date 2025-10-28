@@ -19,23 +19,25 @@ header {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* distributes left, center, right */
+  justify-content: space-between;
   max-width: 1200px;
   margin: auto;
-  padding: 0 20px;
-  position: relative;
+  padding: 0 40px;
 }
 
-.header {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #240101;
+.logo img{
+  width: 150;
+  height: auto;
+  display: block;
 }
 
+/* Center the nav links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 50px;       /* bigger gap between nav links */
+  justify-content: center;
+  flex: 1;                /* pushes center */
+  gap: 50px;
 }
 
 .nav-links a {
@@ -46,6 +48,13 @@ nav {
 
 .nav-links a:hover {
   color: #da1d1d;
+}
+
+/* Right corner section */
+.nav-right {
+  display: block;
+  align-items: center;
+  gap: 10px;
 }
 
 .login-btn {
@@ -62,6 +71,22 @@ nav {
   background: #da1d1d;
   color: #fff;
 }
+
+.user-icon {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  border: 2px solid #333;
+  padding: 6px 8px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.user-icon:hover {
+  background: #da1d1d;
+  color: #fff;
+}
+
 
 .camels {
   width: 100%;
@@ -171,4 +196,66 @@ footer{
   color: #f4efef;
   text-align: center;
   padding: 20px;
+}
+
+footer {
+  background: #0936534f;
+  color: #f4efef;
+  padding: 20px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  align-items: flex-start;    /* center everything horizontally */
+  gap: 20px;
+}
+
+.footer-logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+  margin-right: 200px;
+}
+
+.footer-navs {
+  display: flex;
+  justify-content: center; /* center the 3 nav sections */
+  gap: 50px;
+}
+.footer-nav {
+  text-align: center; /* center text inside each nav section */
+}
+}
+
+.footer-nav p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0.5px solid #f4efef;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+}
+
+.social-links a {
+  color: #f4efef;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.social-links a:hover {
+  color: #da1d1d;
 }
