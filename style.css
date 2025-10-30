@@ -47,9 +47,10 @@ nav {
 
 /* Right corner section */
 .nav-right {
-  display: block;
+  display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
+  margin-left: auto;
 }
 
 .login-btn {
@@ -60,6 +61,7 @@ nav {
   color: #333;
   font-weight: bold;
   transition: 0.3s;
+ 
 }
 
 .login-btn:hover {
@@ -70,7 +72,6 @@ nav {
 .user-icon {
   font-size: 18px;
   color: #333;
-  text-decoration: none;
   border: 2px solid #333;
   padding: 6px 8px;
   border-radius: 50%;
@@ -86,7 +87,6 @@ nav {
 .camels {
   width: 100%;
   display: block;
-  
 }
 
 /* main body */
@@ -145,11 +145,11 @@ color: #555;
 
 .team-card{
  
-  max-width:300px;
+  width:300px;
   text-align:center;
   border:1px solid #ccc; /* small stroke */
   border-radius:10px;
-  padding:20px;
+  padding:1px;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -165,7 +165,7 @@ color: #555;
 
 .team-card h4{
   margin-bottom:10px;
-}
+}  
 
 .view-btn{
   border:2px solid #333;
@@ -195,26 +195,20 @@ footer{
 
 .footer-top {
   display: flex;
-  align-items: flex-start;    /* center everything horizontally */
+  align-items: flex-start;    
   gap: 20px;
 }
 
-.footer-logo img {
-  height: 50px;
-  width: auto;
-  display: block;
-  margin-right: 200px;
-}
 
 .footer-navs {
   display: flex;
-  justify-content: center; /* center the 3 nav sections */
+  justify-content: center; 
   gap: 100px;
-  flex: 1;                /* pushes center */
+  flex: 1;                
 }
 
 .footer-nav {
-  text-align: center; /* center text inside each nav section */
+  text-align: center; 
 }
 
 
